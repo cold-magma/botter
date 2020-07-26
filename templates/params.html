@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botter</title>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='params.css') }}">
+</head>
+<body>
+	<div id="logo">
+		<h1 id="logoh1">Botter</h1>
+		<p>Playlist automisation for your spotify playlists</p>
+	</div>
+	<div id="info">more info</div>
+	<di id="content">
+		<form method="POST" action="#" >
+			<input class="data" type="text" name="word" placeholder="Enter a keyword to find random songs with">
+			<input class="data" type="text" name="genre" placeholder="Enter your preferred genre">
+			<input class="data" type="text" name="limit" placeholder="Enter number of songs to add (max 50)">
+			<input class="submit" name="submit" type="submit" value="Add songs">
+			<input class="submit" name="submit" type="submit" value="Use random values and go ham">
+		</form>
+	</div>
+</body>
+</html>
