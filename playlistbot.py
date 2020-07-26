@@ -1,5 +1,4 @@
 from flask import Flask, render_template, url_for, request, redirect
-import spotipy.util as util
 import os, string, random, sys, urllib, base64, requests, six
 import run
 
