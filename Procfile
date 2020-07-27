@@ -1,1 +1,1 @@
-web: gunicorn app:plyaylistbot
+web: gunicorn app:app
