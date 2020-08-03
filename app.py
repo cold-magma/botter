@@ -73,6 +73,8 @@ def trackselect():
         flag = run.run(authID, playlistID, word, genre, limit)
         if flag:
             return redirect(url_for("completed"))
+        else:
+            return render_template('params.html')
 
     else:
         return render_template('params.html')
