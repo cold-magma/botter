@@ -44,7 +44,7 @@ def autho():
     return redirect(url_for("playlistselect"))
 
 
-@app.route("/playlistselect", methods=["GET", "POST"])
+@app.route("/playlistselect/", methods=["GET", "POST"])
 def playlistselect():
     global playlistID
     if request.method == "POST":
@@ -56,7 +56,7 @@ def playlistselect():
         return render_template('playlistselect.html')
 
 
-@app.route("/trackselect", methods=["GET", "POST"])
+@app.route("/trackselect/", methods=["GET", "POST"])
 def trackselect():
     global authID, playlistID
     if request.method == "POST":
@@ -80,7 +80,7 @@ def trackselect():
         return render_template('params.html')
 
 
-@app.route("/completed")
+@app.route("/completed/")
 def completed():
     return render_template('completed.html')
 
