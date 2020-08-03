@@ -19,7 +19,7 @@ encoded_cred = base64.b64encode(six.text_type(client_id + ':' + client_secret).e
 def home():
     if request.method == "POST":
         return redirect("https://accounts.spotify.com/authorize?client_id="
-                        + client_id + "&scope=" + scope + "&response_type=code&redirect_uri=http://localhost:5000/auth/")
+                        + client_id + "&scope=" + scope + "&response_type=code&redirect_uri=https://playlistbotter.herokuapp.com/auth/")
     else:
         return render_template('home.html')
 
@@ -33,7 +33,7 @@ def autho():
     payload = {
         "code": authID,
         "grant_type": "authorization_code",
-        "redirect_uri": "http://localhost:5000/auth/",
+        "redirect_uri": "https://playlistbotter.herokuapp.com/auth/",
         "scope": scope
     }
     headers = {
