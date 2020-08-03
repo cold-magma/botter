@@ -40,17 +40,16 @@ p{
 	align-items: center;
 	justify-content: space-around;
 }
-.submit{
+.links{
+	width: 80%;
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.link{
+	text-decoration: none;
 	font-family: 'VT323', monospace;
 	font-size: 20px;
-	color: white;
-	padding: 10px 15px;
-	background: #1db954;
-	border:none;
-	margin-top: 20px;
-	text-decoration: none;
-}
-.submit:hover{
-	transform: translate(-4px,-4px);
-	box-shadow: 0px 0px 1px #17803c,1px 1px 1px #17803c,2px 2px 1px #17803c,3px 3px 1px #17803c,4px 4px 1px #17803c;
+	color:white;
 }

@@ -74,7 +74,7 @@ def trackselect():
         if flag:
             return redirect(url_for("completed"))
         else:
-            return render_template('params.html')
+            return redirect(url_for("home"))
 
     else:
         return render_template('params.html')
