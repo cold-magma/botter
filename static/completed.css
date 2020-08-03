@@ -48,6 +48,9 @@ p{
 	align-items: center;
 }
 .link{
+	width:40%;
+	background-color: #1db954;
+	text-align: center;
 	text-decoration: none;
 	font-family: 'VT323', monospace;
 	font-size: 20px;
