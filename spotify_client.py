@@ -1,5 +1,5 @@
 import random
-import string
+import sys
 import requests
 import urllib
 
@@ -26,6 +26,8 @@ class SpotifyClient():
     def added_to_lib(self, trackids):
         uris = ','.join(trackids)
         url = "https://api.spotify.com/v1/playlists/{}/tracks?uris={}".format(self.playlistID, uris)
+
+        print(uris,file=sys.stdout)
 
         response = requests.post(url,
                                  headers={
