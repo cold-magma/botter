@@ -47,7 +47,7 @@ p{
 	justify-content: space-around;
 	align-items: center;
 }
-.link{
+a{
 	width:40%;
 	background-color: #1db954;
 	text-align: center;
