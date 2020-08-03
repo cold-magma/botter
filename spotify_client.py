@@ -27,6 +27,8 @@ class SpotifyClient():
         uris = ','.join(trackids)
         url = "https://api.spotify.com/v1/playlists/{}/tracks?uris={}".format(self.playlistID, uris)
 
+        print("added tracks", file=sys.stdout)
+        
         response = requests.post(url,
                                  headers={
                                      "Content-Type": "application/json",
