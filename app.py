@@ -9,8 +9,8 @@ playlistID = ""
 word = ""
 genre = ""
 limit = ""
-client_id = '0124db9ddbbc4fc3af027f67e06549c6'
-client_secret = '6b27a67494e14d04a02888fdc89cd452'
+client_id = str(os.environ['SPOTIFY_CLIENT_ID'])
+client_secret = str(os.environ['SPOTIFY_CLIENT_SECRET'])
 
 encoded_cred = base64.b64encode(six.text_type(client_id + ':' + client_secret).encode("ascii"))
 
