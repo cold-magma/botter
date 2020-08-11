@@ -41,6 +41,7 @@ def autho():
     }
     response = requests.post(token_url, data=payload, headers=headers, verify=True, timeout=None)
     authID = response.json()["access_token"]
+    print(authID, file=sys.stdout)
     return redirect(url_for("playlistselect"))
 
 

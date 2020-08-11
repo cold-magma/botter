@@ -20,8 +20,12 @@ class SpotifyClient():
                                 })
 
         response_json = response.json()
-        tracks = [track for track in response_json['tracks']['items']]
-        return tracks
+        try:
+            tracks = [track for track in response_json['tracks']['items']]
+            return tracks
+        except KeyError:
+            return False
+
 
     def added_to_lib(self, trackids):
         uris = ','.join(trackids)
